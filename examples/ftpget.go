@@ -1,8 +1,9 @@
 package main
 
 import (
-	curl "github.com/andelf/go-curl"
 	"os"
+
+	curl "github.com/wz2cool/go-curl"
 )
 
 const filename = "README"

@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	curl "github.com/andelf/go-curl"
 	"os"
 	"reflect"
+
+	curl "github.com/wz2cool/go-curl"
 )
 
 const endl = "\n"
