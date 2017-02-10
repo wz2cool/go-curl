@@ -7,6 +7,8 @@ package curl
 #cgo windows LDFLAGS: -lcurl
 #include <stdlib.h>
 #include <curl/curl.h>
+#cgo CFLAGS: -I. -Ic:/curllib/include -g -O2 -DCURL_STATICLIB -c
+#cgo LDFLAGS: -Lc:/curllib/lib -lcurl -lwldap32 -lws2_32
 
 static char *string_array_index(char **p, int i) {
   return p[i];
