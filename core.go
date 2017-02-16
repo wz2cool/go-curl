@@ -8,7 +8,7 @@ package curl
 #include <stdlib.h>
 #include <curl/curl.h>
 #cgo CFLAGS: -I. -Ic:/curllib/include -g -O2 -DCURL_STATICLIB -c
-#cgo LDFLAGS: -Lc:/curllib/lib -lcurl -lwldap32 -lws2_32
+#cgo LDFLAGS: -Lc:/curllib/lib -lcurl -LC:/curllib/utils/ssl/lib -lssl -lcrypto -lgdi32 -lcrypt32 -LC:/curllib/utils/zlib -lz -lwldap32 -lws2_32
 
 static char *string_array_index(char **p, int i) {
   return p[i];
